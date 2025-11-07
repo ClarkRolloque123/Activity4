@@ -16,7 +16,7 @@ CREATE TABLE animals (
     dateofbirth DATE,
     gender VARCHAR(10), 
     color VARCHAR(50),
-    ownerid INT,
+    ownerid INT
     FOREIGN KEY (ownerid) REFERENCES owners(ownerid)
 );
 
@@ -33,8 +33,8 @@ CREATE TABLE doctors (
     dfirstname VARCHAR(50),
     dlastname VARCHAR(50),
     speciality VARCHAR(100),
-    phone VARCHAR(20)
-    email VARCHAR(100),
+    phone VARCHAR(20),
+    email VARCHAR(100)
 );
 
 CREATE TABLE invoices (
