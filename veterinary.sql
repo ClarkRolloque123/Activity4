@@ -41,7 +41,7 @@ CREATE TABLE invoices (
     invoiceid INT PRIMARY KEY,
     appointid INT,
     totalamount DECIMAL(10, 2),
-    payment date DATE,
+    paymentdate DATE,
     FOREIGN KEY (appointid) REFERENCES appointments(appointid)
 );
 
